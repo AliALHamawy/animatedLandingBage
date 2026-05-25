@@ -1,4 +1,5 @@
 import { Header, Hero, LogoTicker, ProductShowCase, Pricing, Testimonials, CallToAction, Footer } from "@/Import";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Testimonials />
       <CallToAction />
       <Footer />
+      <Analytics />
     </>
   );
 }
