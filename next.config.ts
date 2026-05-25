@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+const withSvgr = require('next-svgr');
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // إعداداتك الأخرى
 };
 
-export default nextConfig;
+module.exports = withSvgr(nextConfig);
