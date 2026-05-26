@@ -4,10 +4,9 @@ import SecoundButton from '@/components/SecoundButton'
 import cogImage from '@/assets/cog.png'
 import CylinderTmage from '@/assets/cylinder.png'
 import NoodleImage from '@/assets/noodle.png'
-import Image from 'next/image'
 import MainHeading from '@/components/MainHeading'
 import SecoundaryHeading from '@/components/SecoundaryHeading'
-import { easeInOut, motion, useMotionValueEvent, useScroll, useTransform } from "motion/react"
+import { easeInOut, motion, useScroll, useTransform } from "motion/react"
 import { useRef } from 'react'
 
 const Hero = () => {
@@ -23,9 +22,9 @@ const Hero = () => {
             <section ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip  '>
                 <div className="container px-5 lg:max-w-300 lg:gap-10 lg:mx-auto">
                     <div className='md:flex items-center'>
-                        <div className='md:w-119.5'>
+                        <div className='md:w-105'>
                             <SecoundaryHeading text='Version 2.0 Is Here' />
-                            <MainHeading text='Pathway To Productivity' cName='text-5xl font-bold' />
+                            <MainHeading text='Pathway To Productivity' cName='text-5xl font-bold' animateTypewriter={true} />
                             <p className='text-xl text-[#010d3e] tracking-tight mt-6'>Celebrate The Joy Of Accomplishment With An App Designed To Track Your Progress, Motivate Your Efforts, And Celebrate Your Successes</p>
                             <div className="inline-flex gap-1 items-center mt-7.5">
                                 <MainBtn text='Get For Free' extraClass="" />
